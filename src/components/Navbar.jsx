@@ -30,20 +30,18 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled || isOpen ? 'bg-secondary-bg shadow-lg py-4' : 'bg-transparent py-6'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isOpen ? 'bg-secondary-bg shadow-lg py-4' : 'bg-transparent py-6'
+        }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <ScrollLink
           to="hero"
           smooth={true}
           duration={500}
-          className="text-2xl font-bold font-mono text-accent-1 cursor-pointer hover:opacity-80 transition-opacity"
+          className="hidden md:block text-2xl font-bold font-mono text-accent-1 cursor-pointer hover:opacity-80 transition-opacity"
         >
           {personalInfo.name}
-          {/* <span className="text-text-primary">.</span> */}
-        </ScrollLink>
+        </ScrollLink> 
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 items-center">

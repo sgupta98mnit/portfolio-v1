@@ -7,12 +7,12 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-primary-bg relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-primary-bg relative overflow-hidden pt-10 sm:pt-0">
       {/* Optional: Subtle background elements if you want */}
       {/* <div className="absolute inset-0 opacity-5">
         <img src="/path/to/subtle-code-pattern.svg" alt="background pattern" className="w-full h-full object-cover"/>
       </div> */}
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,28 +22,31 @@ const Hero = () => {
           <h3 className="text-accent-1 font-mono text-lg sm:text-xl mb-3">
             Hi, my name is
           </h3>
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold text-text-primary mb-4">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-text-primary mb-4 leading-tight">
             {personalInfo.name}.
           </h1>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-secondary mb-6">
-            <TypeAnimation
-              sequence={[
-                'I build scalable and efficient backend systems that power modern web applications.',
-                2000,
-                'I am a Full Stack Developer.',
-                2000,
-                'I love to code.',
-                2000,
-                'I solve problems.',
-                2000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-              className="font-mono"
-            />
-          </h2>
-          <p className="text-text-secondary max-w-2xl mx-auto mb-8 text-base sm:text-lg">
+          <div className="h-16 sm:h-20 md:h-24 flex items-center justify-center mb-6">
+            <h2 className="text-lg sm:text-2xl md:text-4xl font-bold text-text-secondary leading-snug">
+              <TypeAnimation
+                sequence={[
+                  'I build fast, scalable backend systems for modern web apps.',
+                  2000,
+                  'I am a Full Stack Developer.',
+                  2000,
+                  'I love to code.',
+                  2000,
+                  'I solve problems.',
+                  2000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                className="font-mono"
+              />
+            </h2>
+          </div>
+
+          <p className="text-text-secondary max-w-[90%] sm:max-w-2xl mx-auto mb-8 text-sm sm:text-base leading-relaxed">
             {personalInfo.bio}
           </p>
         </motion.div>
@@ -93,12 +96,12 @@ const Hero = () => {
           ))}
         </motion.div>
       </div>
-      
+
       {/* Scroll down indicator (optional) */}
-      <ScrollLink 
-        to="about" 
-        smooth={true} 
-        duration={800} 
+      <ScrollLink
+        to="about"
+        smooth={true}
+        duration={800}
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-accent-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
