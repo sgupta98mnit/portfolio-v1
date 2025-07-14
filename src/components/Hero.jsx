@@ -28,9 +28,9 @@ const Hero = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-secondary mb-6">
             <TypeAnimation
               sequence={[
-                'I build scalable and efficient backend systems that power modern web applications.',
-                2000,
                 'I am a Full Stack Developer.',
+                2000,
+                'I build scalable systems.',
                 2000,
                 'I love to code.',
                 2000,
