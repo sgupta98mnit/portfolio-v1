@@ -25,28 +25,25 @@ const Hero = () => {
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-text-primary mb-4 leading-tight">
             {personalInfo.name}.
           </h1>
-          <div className="h-16 sm:h-20 md:h-24 flex items-center justify-center mb-6">
-            <h2 className="text-lg sm:text-2xl md:text-4xl font-bold text-text-secondary leading-snug">
-              <TypeAnimation
-                sequence={[
-                  'I build fast, scalable backend systems for modern web apps.',
-                  2000,
-                  'I am a Full Stack Developer.',
-                  2000,
-                  'I love to code.',
-                  2000,
-                  'I solve problems.',
-                  2000,
-                ]}
-                wrapper="span"
-                speed={50}
-                repeat={Infinity}
-                className="font-mono"
-              />
-            </h2>
-          </div>
-
-          <p className="text-text-secondary max-w-[90%] sm:max-w-2xl mx-auto mb-8 text-sm sm:text-base leading-relaxed">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-secondary mb-6">
+            <TypeAnimation
+              sequence={[
+                'I am a Full Stack Developer.',
+                2000,
+                'I build scalable systems.',
+                2000,
+                'I love to code.',
+                2000,
+                'I solve problems.',
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+              className="font-mono"
+            />
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto mb-8 text-base sm:text-lg">
             {personalInfo.bio}
           </p>
         </motion.div>

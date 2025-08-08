@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import { personalInfo, socialLinks } from '../data/portfolioData.jsx';
+import { personalInfo } from '../data/portfolioData.jsx';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 

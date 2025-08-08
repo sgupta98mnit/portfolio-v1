@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
-import { personalInfo, education } from '../data/portfolioData.jsx';
+import { education } from '../data/portfolioData.jsx';
 import { motion } from 'framer-motion';
 import { FaUniversity, FaSchool } from 'react-icons/fa'; // Example icons
 
